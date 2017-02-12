@@ -1,0 +1,139 @@
+<html>
+
+<head>
+  <title>5E Combat Encounter Calculator</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <script src="http://underscorejs.org/underscore-min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/spacelab/bootstrap.min.css" rel="stylesheet" />
+  <script src="enc.js"></script>
+</head>
+
+<body>
+	<div class="container">
+
+		<h1>5E Encounter Calculator</h1>
+		<form class="form">
+      <div class="row">
+        <div class="col-lg-4 form-inline">
+          <h3>PCs</h3>
+          <div class="form-group">
+            <label for="cl-1">PC #1 Level</label>
+            <input type="number" class="form-control pc-field" id="cl-1" />
+          </div><br />
+          <div class="form-group">
+            <label for="cl-2">PC #2 Level</label>
+            <input type="number" class="form-control pc-field" id="cl-2" />
+          </div><br />
+          <div class="form-group">
+            <label for="cl-3">PC #3 Level</label>
+            <input type="number" class="form-control pc-field" id="cl-3" />
+          </div><br />
+          <div class="form-group">
+            <label for="cl-4">PC #4 Level</label>
+            <input type="number" class="form-control pc-field" id="cl-4" />
+          </div><br />
+          <div class="form-group">
+            <label for="cl-5">PC #5 Level</label>
+            <input type="number" class="form-control pc-field" id="cl-5" />
+          </div><br />
+          <div class="form-group">
+            <label for="cl-6">PC #6 Level</label>
+            <input type="number" class="form-control pc-field" id="cl-6" />
+          </div><br />
+          <div class="form-group">
+            <label for="cl-7">PC #7 Level</label>
+            <input type="number" class="form-control pc-field" id="cl-7" />
+          </div><br />
+          <div class="form-group">
+            <label for="cl-8">PC #8 Level</label>
+            <input type="number" class="form-control pc-field" id="cl-8" />
+          </div><br />
+        </div>
+
+        <div class="col-lg-8 form">
+          <h3>NPCs</h3>
+          <div class="row form xp-field">
+            <div class="col-xs-2">
+              <input type="number" class="form-control" id="count-1" placeholder="Count" />
+            </div>
+            <div class="col-xs-4">
+              <input type="number" class="form-control" id="xp-1" placeholder="XP value" />
+            </div>
+          </div>
+          <div class="row form xp-field">
+            <div class="col-xs-2">
+              <input type="number" class="form-control" id="count-2" placeholder="Count" />
+            </div>
+            <div class="col-xs-4">
+              <input type="number" class="form-control" id="xp-2" placeholder="XP value" />
+            </div>
+          </div>
+          <div class="row form xp-field">
+            <div class="col-xs-2">
+              <input type="number" class="form-control" id="count-3" placeholder="Count" />
+            </div>
+            <div class="col-xs-4">
+              <input type="number" class="form-control" id="xp-3" placeholder="XP value" />
+            </div>
+          </div>
+          <div class="row form xp-field">
+            <div class="col-xs-2">
+              <input type="number" class="form-control" id="count-4" placeholder="Count" />
+            </div>
+            <div class="col-xs-4">
+              <input type="number" class="form-control" id="xp-4" placeholder="XP value" />
+            </div>
+          </div>
+          <div class="row form xp-field">
+            <div class="col-xs-2">
+              <input type="number" class="form-control" id="count-5" placeholder="Count" />
+            </div>
+            <div class="col-xs-4">
+              <input type="number" class="form-control" id="xp-5" placeholder="XP value" />
+            </div>
+          </div>
+          <div class="row form xp-field">
+            <div class="col-xs-2">
+              <input type="number" class="form-control" id="count-6" placeholder="Count" />
+            </div>
+            <div class="col-xs-4">
+              <input type="number" class="form-control" id="xp-6" placeholder="XP value" />
+            </div>
+          </div>
+          <div class="row form xp-field">
+            <div class="col-xs-2">
+              <input type="number" class="form-control" id="count-7" placeholder="Count" />
+            </div>
+            <div class="col-xs-4">
+              <input type="number" class="form-control" id="xp-7" placeholder="XP value" />
+            </div>
+          </div>
+          <div class="row form xp-field">
+            <div class="col-xs-2">
+              <input type="number" class="form-control" id="count-8" placeholder="Count" />
+            </div>
+            <div class="col-xs-4">
+              <input type="number" class="form-control" id="xp-8" placeholder="XP value" />
+            </div>
+          </div>
+        </div><br />
+      </div>
+
+      <br />
+      <div class="row">
+        <div class="col-lg-4 text-center">
+          <button type="submit" class="btn btn-lg btn-primary" id="calculate">Calculate</button>
+        </div>
+        <div class="col-lg-4">
+          <div id="output"></div>
+        </div>
+      </div>
+
+    </form>
+	</div>
+  
+</body>
+
+</html>
