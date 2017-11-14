@@ -1,0 +1,310 @@
+<html>
+
+<head>
+  <title>Inventory Manager</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/spacelab/bootstrap.min.css" rel="stylesheet" />
+  <script src="inv.js"></script>
+</head>
+
+<body>
+  <div class="container">
+
+    <h1>Inventory Manager</h1>
+    <form class="form">
+      <div class="col-lg-12 form">
+        <h3>Money</h3>
+
+        <div class="row form money-field">
+          <div class="col-xs-2">
+            <label for="cp">CP</label>
+            <input type="number" class="form-control" id="cp" />
+          </div>
+          <div class="col-xs-2">
+            <label for="sp">SP</label>
+            <input type="number" class="form-control" id="sp" />
+          </div>
+          <div class="col-xs-2">
+            <label for="ep">EP</label>
+            <input type="number" class="form-control" id="ep" />
+          </div>
+          <div class="col-xs-2">
+            <label for="gp">GP</label>
+            <input type="number" class="form-control" id="gp" />
+          </div>
+          <div class="col-xs-2">
+            <label for="pp">PP</label>
+            <input type="number" class="form-control" id="pp" />
+          </div>
+        </div>
+
+        <br />
+
+        <div class="row form money-field">
+          <div class="col-xs-8 col-xs-offset-1">
+            <label for="other-wealth">Other wealth (weightless)</label>
+            <textarea class="form-control" id="other-wealth"></textarea>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-12 form">
+        <h3>Inventory</h3>
+
+        <div class="row form inv-field">
+          <div class="col-xs-2">
+            <input type="number" class="form-control" id="count-1" placeholder="Count" />
+          </div>
+          <div class="col-xs-6">
+            <input type="text" class="form-control" id="desc-1" placeholder="Description" />
+          </div>
+          <div class="col-xs-2">
+            <input type="number" class="form-control" id="weight-1" placeholder="Weight" />
+          </div>
+        </div>
+
+        <div class="row form inv-field">
+          <div class="col-xs-2">
+            <input type="number" class="form-control" id="count-2" placeholder="Count" />
+          </div>
+          <div class="col-xs-6">
+            <input type="text" class="form-control" id="desc-2" placeholder="Description" />
+          </div>
+          <div class="col-xs-2">
+            <input type="number" class="form-control" id="weight-2" placeholder="Weight" />
+          </div>
+        </div>
+
+        <div class="row form inv-field">
+          <div class="col-xs-2">
+            <input type="number" class="form-control" id="count-3" placeholder="Count" />
+          </div>
+          <div class="col-xs-6">
+            <input type="text" class="form-control" id="desc-3" placeholder="Description" />
+          </div>
+          <div class="col-xs-2">
+            <input type="number" class="form-control" id="weight-3" placeholder="Weight" />
+          </div>
+        </div>
+
+        <div class="row form inv-field">
+          <div class="col-xs-2">
+            <input type="number" class="form-control" id="count-4" placeholder="Count" />
+          </div>
+          <div class="col-xs-6">
+            <input type="text" class="form-control" id="desc-4" placeholder="Description" />
+          </div>
+          <div class="col-xs-2">
+            <input type="number" class="form-control" id="weight-4" placeholder="Weight" />
+          </div>
+        </div>
+
+        <div class="row form inv-field">
+          <div class="col-xs-2">
+            <input type="number" class="form-control" id="count-5" placeholder="Count" />
+          </div>
+          <div class="col-xs-6">
+            <input type="text" class="form-control" id="desc-5" placeholder="Description" />
+          </div>
+          <div class="col-xs-2">
+            <input type="number" class="form-control" id="weight-5" placeholder="Weight" />
+          </div>
+        </div>
+
+        <div class="row form inv-field">
+          <div class="col-xs-2">
+            <input type="number" class="form-control" id="count-6" placeholder="Count" />
+          </div>
+          <div class="col-xs-6">
+            <input type="text" class="form-control" id="desc-6" placeholder="Description" />
+          </div>
+          <div class="col-xs-2">
+            <input type="number" class="form-control" id="weight-6" placeholder="Weight" />
+          </div>
+        </div>
+
+        <div class="row form inv-field">
+          <div class="col-xs-2">
+            <input type="number" class="form-control" id="count-7" placeholder="Count" />
+          </div>
+          <div class="col-xs-6">
+            <input type="text" class="form-control" id="desc-7" placeholder="Description" />
+          </div>
+          <div class="col-xs-2">
+            <input type="number" class="form-control" id="weight-7" placeholder="Weight" />
+          </div>
+        </div>
+
+        <div class="row form inv-field">
+          <div class="col-xs-2">
+            <input type="number" class="form-control" id="count-8" placeholder="Count" />
+          </div>
+          <div class="col-xs-6">
+            <input type="text" class="form-control" id="desc-8" placeholder="Description" />
+          </div>
+          <div class="col-xs-2">
+            <input type="number" class="form-control" id="weight-8" placeholder="Weight" />
+          </div>
+        </div>
+
+        <div class="row form inv-field">
+          <div class="col-xs-2">
+            <input type="number" class="form-control" id="count-9" placeholder="Count" />
+          </div>
+          <div class="col-xs-6">
+            <input type="text" class="form-control" id="desc-9" placeholder="Description" />
+          </div>
+          <div class="col-xs-2">
+            <input type="number" class="form-control" id="weight-9" placeholder="Weight" />
+          </div>
+        </div>
+
+        <div class="row form inv-field">
+          <div class="col-xs-2">
+            <input type="number" class="form-control" id="count-10" placeholder="Count" />
+          </div>
+          <div class="col-xs-6">
+            <input type="text" class="form-control" id="desc-10" placeholder="Description" />
+          </div>
+          <div class="col-xs-2">
+            <input type="number" class="form-control" id="weight-10" placeholder="Weight" />
+          </div>
+        </div>
+
+        <div class="row form inv-field">
+          <div class="col-xs-2">
+            <input type="number" class="form-control" id="count-11" placeholder="Count" />
+          </div>
+          <div class="col-xs-6">
+            <input type="text" class="form-control" id="desc-11" placeholder="Description" />
+          </div>
+          <div class="col-xs-2">
+            <input type="number" class="form-control" id="weight-11" placeholder="Weight" />
+          </div>
+        </div>
+
+        <div class="row form inv-field">
+          <div class="col-xs-2">
+            <input type="number" class="form-control" id="count-12" placeholder="Count" />
+          </div>
+          <div class="col-xs-6">
+            <input type="text" class="form-control" id="desc-12" placeholder="Description" />
+          </div>
+          <div class="col-xs-2">
+            <input type="number" class="form-control" id="weight-12" placeholder="Weight" />
+          </div>
+        </div>
+
+        <div class="row form inv-field">
+          <div class="col-xs-2">
+            <input type="number" class="form-control" id="count-13" placeholder="Count" />
+          </div>
+          <div class="col-xs-6">
+            <input type="text" class="form-control" id="desc-13" placeholder="Description" />
+          </div>
+          <div class="col-xs-2">
+            <input type="number" class="form-control" id="weight-13" placeholder="Weight" />
+          </div>
+        </div>
+
+        <div class="row form inv-field">
+          <div class="col-xs-2">
+            <input type="number" class="form-control" id="count-14" placeholder="Count" />
+          </div>
+          <div class="col-xs-6">
+            <input type="text" class="form-control" id="desc-14" placeholder="Description" />
+          </div>
+          <div class="col-xs-2">
+            <input type="number" class="form-control" id="weight-14" placeholder="Weight" />
+          </div>
+        </div>
+
+        <div class="row form inv-field">
+          <div class="col-xs-2">
+            <input type="number" class="form-control" id="count-15" placeholder="Count" />
+          </div>
+          <div class="col-xs-6">
+            <input type="text" class="form-control" id="desc-15" placeholder="Description" />
+          </div>
+          <div class="col-xs-2">
+            <input type="number" class="form-control" id="weight-15" placeholder="Weight" />
+          </div>
+        </div>
+
+        <div class="row form inv-field">
+          <div class="col-xs-2">
+            <input type="number" class="form-control" id="count-16" placeholder="Count" />
+          </div>
+          <div class="col-xs-6">
+            <input type="text" class="form-control" id="desc-16" placeholder="Description" />
+          </div>
+          <div class="col-xs-2">
+            <input type="number" class="form-control" id="weight-16" placeholder="Weight" />
+          </div>
+        </div>
+
+        <div class="row form inv-field">
+          <div class="col-xs-2">
+            <input type="number" class="form-control" id="count-17" placeholder="Count" />
+          </div>
+          <div class="col-xs-6">
+            <input type="text" class="form-control" id="desc-17" placeholder="Description" />
+          </div>
+          <div class="col-xs-2">
+            <input type="number" class="form-control" id="weight-17" placeholder="Weight" />
+          </div>
+        </div>
+
+        <div class="row form inv-field">
+          <div class="col-xs-2">
+            <input type="number" class="form-control" id="count-18" placeholder="Count" />
+          </div>
+          <div class="col-xs-6">
+            <input type="text" class="form-control" id="desc-18" placeholder="Description" />
+          </div>
+          <div class="col-xs-2">
+            <input type="number" class="form-control" id="weight-18" placeholder="Weight" />
+          </div>
+        </div>
+
+        <div class="row form inv-field">
+          <div class="col-xs-2">
+            <input type="number" class="form-control" id="count-19" placeholder="Count" />
+          </div>
+          <div class="col-xs-6">
+            <input type="text" class="form-control" id="desc-19" placeholder="Description" />
+          </div>
+          <div class="col-xs-2">
+            <input type="number" class="form-control" id="weight-19" placeholder="Weight" />
+          </div>
+        </div>
+
+        <div class="row form inv-field">
+          <div class="col-xs-2">
+            <input type="number" class="form-control" id="count-20" placeholder="Count" />
+          </div>
+          <div class="col-xs-6">
+            <input type="text" class="form-control" id="desc-20" placeholder="Description" />
+          </div>
+          <div class="col-xs-2">
+            <input type="number" class="form-control" id="weight-20" placeholder="Weight" />
+          </div>
+        </div>
+      </div>
+
+      <br/>&nbsp;<br/>
+
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-1 text-center">
+          <button type="submit" class="btn btn-lg btn-primary" id="save">Save</button>
+        </div>
+      </div>
+
+    </form>
+  </div>
+</body>
+
+</html>
