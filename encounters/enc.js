@@ -156,7 +156,7 @@ $(document).ready(function() {
       switch(difficulty) {
         case 'trivial':
           message = 'This encounter is <b>trivial</b>.<br />(' + monster_xp + ' XP, or ' + Math.floor(monster_xp/player_count) + ' per player)';
-          $('#output').removeClass().addClass('alert alert-primary text-center').html(message);
+          $('#output').removeClass().addClass('alert alert-success text-center').html(message);
           break;
         case 'easy':
           message = 'This encounter is <b>easy</b>.<br />(' + monster_xp + ' XP, or ' + Math.floor(monster_xp/player_count) + ' per player)';
