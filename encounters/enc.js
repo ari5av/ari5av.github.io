@@ -74,7 +74,7 @@ $(document).ready(function() {
         c = +($('#cl-'+i).val());
         if (c == NaN || c == 0)
           continue;
-        count += c;
+        count += 1;
       }
       
       return count;
