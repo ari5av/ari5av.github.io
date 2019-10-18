@@ -24,9 +24,11 @@ $(document).ready(function() {
     "con artists",
     "cowboys",
     "crazy scientists",
+    "cyberpunk",
     "cyborgs",
     "demons",
     "detectives",
+    "dieselpunk",
     "dinosaurs",
     "dragons",
     "drugs",
@@ -34,6 +36,7 @@ $(document).ready(function() {
     "evil trees",
     "faeries",
     "factories/plants",
+    "flamencos",
     "flamingos",
     "floating cities",
     "Four Horsemen",
@@ -60,6 +63,7 @@ $(document).ready(function() {
     "liches",
     "lizardfolk/saurians",
     "mad gods",
+    "magepunk",
     "magitech",
     "malls",
     "masquerade balls",
@@ -101,6 +105,7 @@ $(document).ready(function() {
     "sphinxes",
     "spies",
     "starships",
+    "steampunk",
     "street racers",
     "submarines",
     "super soldiers",
@@ -124,10 +129,16 @@ $(document).ready(function() {
   console.log("tropes length: " + tropes.length);
 
   $('#generate').click(function() {
+    var these_ones = [];
     $('#generated').empty();
-    for (var i=0;i<3;i++) {
-      $('#generated').append(tropes[Math.floor(Math.random()*tropes.length)]).append("<br />");
-    }
+    var i=0;
+    do {
+      var this_one = tropes[Math.floor(Math.random()*tropes.length)];
+      if (!these_ones.includes(this_one)) {
+        $('#generated').append(this_one).append("<br />");
+        these_ones[i++] = this_one;
+      }
+    } while (i<3);
   });
 
 });
