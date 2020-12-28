@@ -1,165 +1,174 @@
 $(document).ready(function() {
-  var tropes = [
-    "alchemists",
-    "aliens",
-    "amazons",
-    "ancient/lost technology",
-    "angels",
-    "archaeologists",
-    "artificial intelligence",
-    "assassins",
-    "astrologers/fortune tellers",
-    "astronomers",
+  var settings = [
     "Atlantis",
-    "Aztecs",
     "bazaars",
-    "beggars",
-    "bootleggers",
-    "bounty hunters",
     "brothels",
-    "butlers",
     "casinos",
     "castles",
     "catacombs",
-    "catburglars",
     "caverns",
-    "centaurs",
+    "factories/plants",
+    "floating cities",
+    "heaven",
+    "hell",
+    "haunted houses",
+    "hospitals",
+    "labor camps",
+    "libraries",
+    "malls",
+    "masquerade balls",
+    "prisons",
+    "space stations",
+    "tent cities",
+    "trailer parks",
+  ];
+  var people = [
+    "alchemists",
+    "amazons",
+    "angels",
+    "archaeologists",
+    "assassins",
+    "astrologers/fortune tellers",
+    "astronomers",
+    "Aztecs",
+    "beggars",
+    "bootleggers",
+    "bounty hunters",
+    "butlers",
+    "catburglars",
     "clones",
     "clowns",
     "con artists",
     "cowboys",
     "crazy scientists",
-    "cyberpunk",
-    "cyborgs",
     "demons",
     "detectives",
-    "dieselpunk",
-    "dinosaurs",
-    "disembodied voices",
-    "doomsday",
-    "dragons",
-    "drugs",
-    "eldritch abominations",
-    "evil trees",
     "explorers",
-    "faeries",
-    "factories/plants",
     "flamencos",
-    "flamingos",
-    "floating cities",
-    "Four Horsemen",
     "gangsters",
     "genetics/geneticists",
     "genies",
     "ghost hunters",
-    "giant apes",
-    "giants",
     "goblins",
     "golemancers",
     "gun priests",
     "gunslingers",
-    "gyrocopters",
     "hackers",
-    "haunted houses",
-    "heaven and hell",
-    "hive minds",
-    "hospitals",
-    "hot air balloons",
     "Igors",
     "Illuminati",
     "Jedi and Sith",
     "journalists",
-    "kitty cats and puppy dogs",
-    "krakens",
     "kung fu masters",
-    "labor camps",
     "lawyers",
-    "leather",
-    "libraries",
-    "liches",
-    "lions, tigers, and bears",
     "lizardfolk/saurians",
     "mad gods",
     "mad scientists",
-    "magepunk",
-    "magitech",
-    "malls",
-    "masquerade balls",
     "mechanics",
-    "mechs",
-    "meteorite metal",
-    "militaries",
-    "minotaurs",
-    "money laundering",
     "mountain men",
-    "motorcycles",
-    "mummies",
     "musicians",
-    "mutants",
-    "mysterious orbs",
     "necromancers",
     "nephilim",
     "ninjas",
-    "nuclear energy/weapons",
-    "old gods",
-    "opera",
     "orphans",
-    "pandas",
     "pirates",
     "planeswalkers",
     "poachers",
     "policemen",
-    "prisons",
-    "priests/priestesses",
-    "prophecies",
     "prostitutes",
+    "pyramids and pharaohs",
+    "priests/priestesses",
     "psions and psychics",
     "psychologists",
-    "pyramids and pharaohs",
     "rat-men",
-    "robots",
     "royalty",
-    "rune magic",
     "samurais",
-    "sasquatch",
     "secret agents",
-    "secret societies",
     "shamans and witch doctors",
-    "skyscrapers and sky bridges",
     "slaves",
     "smugglers",
     "snake men",
-    "space battles",
-    "space stations",
     "Spartans",
-    "sphinxes",
     "spies",
-    "starships",
-    "steampunk",
     "street racers",
-    "submarines",
     "super soldiers",
-    "supercorporations",
     "superheroes",
     "swashbucklers",
-    "tanks",
-    "tattoos",
-    "tent cities",
-    "titans",
     "tourists",
-    "trailer parks",
-    "trains",
-    "trolls",
     "twins/triplets",
     "vampires",
     "vikings",
-    "viruses and epidemics",
     "viziers",
     "warlords",
     "werewolves",
+  ];
+  var genres = [
+    "cyberpunk",
+    "dieselpunk",
+    "doomsday",
+    "magepunk",
+    "magitech",
+    "steampunk",
+  ];
+  var transportation = [
+    "gyrocopters",
+    "hot air balloons",
+    "mechs",
+    "motorcycles",
+    "starships",
+    "submarines",
+    "trains",
+    "Zeppelins",
+  ];
+  var tropes = [
+    "aliens",
+    "ancient/lost technology",
+    "artificial intelligence",
+    "centaurs",
+    "cyborgs",
+    "dinosaurs",
+    "disembodied voices",
+    "dragons",
+    "drugs",
+    "eldritch abominations",
+    "evil trees",
+    "faeries",
+    "flamingos",
+    "Four Horsemen",
+    "giant apes",
+    "giants",
+    "hive minds",
+    "kitty cats and puppy dogs",
+    "krakens",
+    "leather",
+    "liches",
+    "lions, tigers, and bears",
+    "meteorite metal",
+    "militaries",
+    "minotaurs",
+    "money laundering",
+    "mummies",
+    "mutants",
+    "mysterious orbs",
+    "nuclear energy/weapons",
+    "old gods",
+    "opera",
+    "pandas",
+    "prophecies",
+    "robots",
+    "rune magic",
+    "sasquatch",
+    "secret societies",
+    "skyscrapers and sky bridges",
+    "space battles",
+    "sphinxes",
+    "supercorporations",
+    "tanks",
+    "tattoos",
+    "titans",
+    "trolls",
+    "viruses and epidemics",
     "wild gods",
     "yetis",
-    "Zeppelins",
     "zombies",
     "zoos/menageries"
   ];
@@ -169,6 +178,47 @@ $(document).ready(function() {
     var these_ones = [];
     $('#generated').empty();
     var i=0;
+    $('#generated').append("<h2>Settings</h2>");
+    do {
+      var this_one = settings[Math.floor(Math.random()*settings.length)];
+      if (!these_ones.includes(this_one)) {
+        $('#generated').append(this_one).append("<br />");
+        these_ones[i++] = this_one;
+      }
+    } while (i<2);
+    these_ones = [];
+    i=0;
+    $('#generated').append("<h2>People</h2>");
+    do {
+      var this_one = people[Math.floor(Math.random()*people.length)];
+      if (!these_ones.includes(this_one)) {
+        $('#generated').append(this_one).append("<br />");
+        these_ones[i++] = this_one;
+      }
+    } while (i<2);
+    these_ones = [];
+    i=0;
+    $('#generated').append("<h2>Genres</h2>");
+    do {
+      var this_one = genres[Math.floor(Math.random()*genres.length)];
+      if (!these_ones.includes(this_one)) {
+        $('#generated').append(this_one).append("<br />");
+        these_ones[i++] = this_one;
+      }
+    } while (i<2);
+    these_ones = [];
+    i=0;
+    $('#generated').append("<h2>Transportation</h2>");
+    do {
+      var this_one = transportation[Math.floor(Math.random()*transportation.length)];
+      if (!these_ones.includes(this_one)) {
+        $('#generated').append(this_one).append("<br />");
+        these_ones[i++] = this_one;
+      }
+    } while (i<2);
+    these_ones = [];
+    i=0;
+    $('#generated').append("<h2>Tropes</h2>");
     do {
       var this_one = tropes[Math.floor(Math.random()*tropes.length)];
       if (!these_ones.includes(this_one)) {
@@ -177,5 +227,4 @@ $(document).ready(function() {
       }
     } while (i<3);
   });
-
 });
