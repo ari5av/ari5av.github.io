@@ -7,7 +7,10 @@ $(document).ready(function() {
     "castles",
     "catacombs",
     "caverns",
+    "city streets",
+    "elemental planes",
     "factories/plants",
+    "Feywild",
     "floating cities",
     "heaven",
     "hell",
@@ -21,6 +24,7 @@ $(document).ready(function() {
     "space stations",
     "tent cities",
     "trailer parks",
+    "Underdark",
   ];
   var people = [
     "alchemists",
@@ -105,9 +109,13 @@ $(document).ready(function() {
     "cyberpunk",
     "dieselpunk",
     "doomsday",
+    "historical fiction",
     "magepunk",
     "magitech",
+    "modern",
+    "sci-fi",
     "steampunk",
+    "swords and sorcery",
   ];
   var transportation = [
     "gyrocopters",
@@ -178,7 +186,7 @@ $(document).ready(function() {
     var these_ones = [];
     $('#generated').empty();
     var i=0;
-    $('#generated').append("<h2>Settings</h2>");
+    $('#generated').append("<h3>Settings</h3>");
     do {
       var this_one = settings[Math.floor(Math.random()*settings.length)];
       if (!these_ones.includes(this_one)) {
@@ -186,9 +194,10 @@ $(document).ready(function() {
         these_ones[i++] = this_one;
       }
     } while (i<2);
+    
     these_ones = [];
     i=0;
-    $('#generated').append("<h2>People</h2>");
+    $('#generated').append("<h3>People</h3>");
     do {
       var this_one = people[Math.floor(Math.random()*people.length)];
       if (!these_ones.includes(this_one)) {
@@ -196,19 +205,14 @@ $(document).ready(function() {
         these_ones[i++] = this_one;
       }
     } while (i<2);
+    
+    $('#generated').append("<h3>Genre</h3>");
+    var this_one = genres[Math.floor(Math.random()*genres.length)];
+    $('#generated').append(this_one).append("<br />");
+    
     these_ones = [];
     i=0;
-    $('#generated').append("<h2>Genres</h2>");
-    do {
-      var this_one = genres[Math.floor(Math.random()*genres.length)];
-      if (!these_ones.includes(this_one)) {
-        $('#generated').append(this_one).append("<br />");
-        these_ones[i++] = this_one;
-      }
-    } while (i<2);
-    these_ones = [];
-    i=0;
-    $('#generated').append("<h2>Transportation</h2>");
+    $('#generated').append("<h3>Transportation</h3>");
     do {
       var this_one = transportation[Math.floor(Math.random()*transportation.length)];
       if (!these_ones.includes(this_one)) {
@@ -216,9 +220,10 @@ $(document).ready(function() {
         these_ones[i++] = this_one;
       }
     } while (i<2);
+    
     these_ones = [];
     i=0;
-    $('#generated').append("<h2>Tropes</h2>");
+    $('#generated').append("<h3>Tropes</h3>");
     do {
       var this_one = tropes[Math.floor(Math.random()*tropes.length)];
       if (!these_ones.includes(this_one)) {
