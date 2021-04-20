@@ -37,6 +37,8 @@ $(document).ready(function() {
       try {
         Inventory.items = JSON.parse(window.localStorage.getItem('items'));
         Inventory.money = JSON.parse(window.localStorage.getItem('money'));
+        console.log(Inventory.items);
+        console.log(Inventory.money);
         if (Inventory.items === null) {
           Inventory.items = [];
         }
