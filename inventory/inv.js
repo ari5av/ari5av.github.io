@@ -64,7 +64,7 @@ $(document).ready(function() {
       }
     },
 
-    clear_inventory = function() {
+    clear_inventory: function() {
       for (i=1;i<=Inventory.INV_FIELDS;i++) {
         $('#count-'+i).val('');
         $('#desc-'+i).val('');
