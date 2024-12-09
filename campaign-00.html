@@ -1,0 +1,580 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AD&amp;D Campaign</title>
+    <!-- <style>
+            #basic-characters, #adnd-characters { border: 2px solid black; }
+            #basic-characters tr td, #adnd-characters tr td { border-bottom: 1px solid black; }
+        </style> -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 class="display-1 text-center">AD&amp;D Campaign</h1>
+
+      <div class="display-5">The Characters:</div>
+      <table id="adnd-characters" class="table table-sm">
+        <thead>
+          <tr>
+            <th>1e Character</th>
+            <th>Race</th>
+            <th>Class/Level</th>
+            <th>Player</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody class="table-group-divider">
+          <tr>
+            <td>Durin</td>
+            <td>D</td>
+            <td>F3</td>
+            <td>Yossi</td>
+            <td>Alive - last seen Session 19</td>
+          </tr>
+          <tr>
+            <td>Linus Padfoot<sup>1</sup></td>
+            <td>Hflg</td>
+            <td>T1</td>
+            <td>Yossi/YZ</td>
+            <td>Alive but unconscious - last seen Session 18</td>
+          </tr>
+          <tr>
+            <td>Gabbai</td>
+            <td>H</td>
+            <td>C2</td>
+            <td>Nat</td>
+            <td>Alive - last seen Session 19</td>
+          </tr>
+          <tr>
+            <td>Glordir Woodkin</td>
+            <td>H</td>
+            <td>R1</td>
+            <td>Nat</td>
+            <td>Alive - last seen Session 19</td>
+          </tr>
+          <tr>
+            <td>Groot</td>
+            <td>Helf</td>
+            <td>D1</td>
+            <td>Nat</td>
+            <td>Alive - last seen Session 19</td>
+          </tr>
+          <tr>
+            <td>Clem</td>
+            <td>H</td>
+            <td>MU3</td>
+            <td>Baruch</td>
+            <td>Alive - last seen Session 18</td>
+          </tr>
+          <tr>
+            <td>Kaien</td>
+            <td>H</td>
+            <td>Mk1</td>
+            <td>Baruch</td>
+            <td>Alive - last seen Session 18</td>
+          </tr>
+          <tr>
+            <td>Father Tuck</td>
+            <td>H</td>
+            <td>C1</td>
+            <td>Mendy</td>
+            <td>Alive - last seen Session 18</td>
+          </tr>
+          <tr>
+            <td>Killoriel</td>
+            <td>E</td>
+            <td>F1</td>
+            <td>Mendy</td>
+            <td>Alive - last seen Session 18</td>
+          </tr>
+          <tr>
+            <td>Niolas</td>
+            <td>H</td>
+            <td>F1</td>
+            <td>Alon</td>
+            <td>Alive - last seen Session 17</td>
+          </tr>
+          <tr>
+            <td>Hogan</td>
+            <td>D</td>
+            <td>F2</td>
+            <td>Alon</td>
+            <td>Alive - last seen Session 17</td>
+          </tr>
+          <tr>
+            <td>Gorgrim 🪦</td>
+            <td>Horc</td>
+            <td>F1</td>
+            <td>Mendy</td>
+            <td>Killed in action during Session 15</td>
+          </tr>
+          <tr>
+            <td>Gromak<sup>2</sup></td>
+            <td>Horc</td>
+            <td>Bb1</td>
+            <td>Noah G.</td>
+            <td>Alive - last seen Session 19</td>
+          </tr>
+          <tr>
+            <td>Bronan</td>
+            <td>H</td>
+            <td>P3</td>
+            <td>NPC</td>
+            <td>Alive - last seen Session 19</td>
+          </tr>
+          <tr>
+            <td>Lareth</td>
+            <td>H</td>
+            <td>C?</td>
+            <td>NPC</td>
+            <td>Alive and on the run - last seen Session 12</td>
+          </tr>
+          <tr>
+            <td>Lareth's two acolytes 🪦</td>
+            <td>H</td>
+            <td>C?</td>
+            <td>NPCs</td>
+            <td>Killed during Session 12</td>
+          </tr>
+          <tr>
+            <td>Elmer</td>
+            <td>Mule</td>
+            <td></td>
+            <td>Mount</td>
+            <td>Alive - last seen Session 19</td>
+          </tr>
+          <tr>
+            <td>3x Pack mules</td>
+            <td>Mule</td>
+            <td></td>
+            <td>Pack animal</td>
+            <td>#3 fled toward Elredd, being tracked</td>
+          </tr>
+          <tr>
+            <td>2x Horses</td>
+            <td>Draft horse</td>
+            <td></td>
+            <td>Mount</td>
+            <td>Two left alive after wolf attack during Session 19</td>
+          </tr>
+          <tr>
+            <td>2x Rescued slaves</td>
+            <td>H</td>
+            <td>?</td>
+            <td>NPC</td>
+            <td>Alive - last seen Session 19</td>
+          </tr>
+          <tr>
+            <td>Bandit captain</td>
+            <td>H</td>
+            <td>F?</td>
+            <td>NPC</td>
+            <td>In custody - last seen Session 19</td>
+          </tr>
+          <tr>
+            <td>3x Bandits</td>
+            <td>H</td>
+            <td>T?</td>
+            <td>NPC</td>
+            <td>In custody - last seen Session 19</td>
+          </tr>
+
+
+          
+          <tr>
+            <td>Grol</td>
+            <td>H</td>
+            <td>C1</td>
+            <td>Noach S-K.</td>
+            <td>🫵 Not yet ported to AD&amp;D! - Alive - last seen Session 10</td>
+          </tr>
+          <tr>
+            <td>Sylp of Vesve Forest</td>
+            <td>E</td>
+            <td>F1/M1</td>
+            <td>Na'amah S-K.</td>
+            <td>🫵 Not yet ported to AD&amp;D! - Alive - last seen Session 7</td>
+          </tr>
+          <tr>
+            <td>Robert</td>
+            <td>H</td>
+            <td>T1</td>
+            <td>Mendy</td>
+            <td>🫵 Not yet ported to AD&amp;D! - Alive - last seen Session 11</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <sup>1</sup> Formerly known as Garret Slinko.<br />
+      <sup>2</sup> Race and class subject to change soon via retcon.
+
+      <p></p>
+
+      <div class="display-5">Session Reports (latest first):</div>
+
+      <p></p>
+
+      <h3>Session 19:</h3>
+      <p>
+        Gromak the Barbarian had been captured by the bandits and offered to "join" them to have a chance of escaping, and has now joined the party.<br />
+        Solving the riddle of the pillars revealed a watertight scroll case with two scrolls inside that haven't been identified yet.<br />
+        The party bunked down for the rest of the night at the bottom of the stairs.  Just before dawn, five wolves attacked the tied-up mounts.  Two of the horses were already dead, and through the course of the fight, Durin's loyal mule Elmer was bitten twice, though he survived.<br />
+        One freed mule escaped to the south, and another mule plus one remaining horse fled northward.  The mule to the south was quickly recaptured by the party, and Glordir plans to track the other two escapees to the north.<br />
+        <b>DAY 38</b><br />
+        End session approximately two hours after dawn, with wounds bound, prayers offered, and spells rememorized.
+      </p>
+
+      <h3>Session 18:</h3>
+      <p>
+        As our intrepid heroes took a moment's rest to bind wounds and catch their breaths, something stirred in the darkness of the cave section yet unexplored.  The party moved forward down a few steps, whereupon Durin pulled a Durin and immediately fell into a covered pit trap.  However, this was most fortunate, as lying in the dirt and rocks of the pit was a magical <i>rope of entanglement</i>!<br />
+        The room had a large pool, an altar and shrine to some evil being, and a closed door.  The ceiling was supported by four large pillars of stone, one of which concealed a frightened man whom the party captured immediately.  Durin examined the altar, which appeared to be made of baked clay, and shrine, a carved driftwood likeness of a medusa's head.  He broke both to smithereens with his morningstar, while Father Tuck splashed a vial of holy water over the whole, which sizzled and spat, releasing a sweet floral scent.  The broken pieces of the altar revealed several pieces of jewelry, likely stolen from the poor sacrificed victims from the altar's initial desecration.<br />
+        Leading the captive out to the bottom of the stairway out, the party were attacked from the rear by a large group of bandits who had been led by this captured man.  After dispatching them, the party backtracked into the room with the pillars.  The now-open doorway was blocked by a thick curtain.  Linus peeked behind it and was immediately skewered by arrows from the remaining bandits.  Clem took his unconscious body aside and applied wound dressings, while the rest of the party took care of the bandits (including two lieutenants and a mage).  They discovered a large heavy chest with plenty of treasure, as well as the mage's spellbook.<br />
+        During combat, the party (and apparently the bandits too) discovered that by touching a certain place on one of the pillars, the whole pillar glows a dull yellow for a short amount of time, then fades.  They plan to investigate momentarily.  End session, Linus is stable but unconscious at 0 hp at approximately midnight.
+      </p>
+
+      <h3>Session 17:</h3>
+      <p>
+        The party continued north-northwest through the coastal scrubland.<br />
+        <b>DAY 35</b><br />
+        After no meaningful events, during the day, Bronan and Killoriel kept watch during the early pre-dawn hours and easily spotted two fire beetles approaching the camp.  Alerting the party, they sprang into action, and after several rounds of bouncing weapons off the hard carapaces, the beetles were dispatched.  Niolas harvested two fireglands, which will glow as candlelight through day 37.<br />
+        <b>DAY 36</b><br />
+        No encounters.  The party camped just before rejoining the Suss Road.<br />
+        <b>DAY 37</b><br />
+        Toward the end of the day's journey northward, the party reached a place where the road passes through a set of ruined stone buildings on either side of it, perhaps as an old disused outpost and waystation.  The ruins were explored, and a set of stairs downward was discovered in the broken rubble.  After a couple of hours of waiting for the sun to set, the party delved into the dungeon while Niolas and Hogan kept watch above.  The first room held some rubble and a few empty sacks and broken boxes.  Behind a large set of locked double doors, easily broken down by Durin, was a large dark cavern including a dark, still pool.  Disturbing the pool called forth an enormous green snake which immediately attacked and nearly killed Durin almost right away with a poisonous bite!  After a dramatic fight, several of the adventurers landed powerful hits nearly simultaneously, destroying the monster.  It was then discovered that the bottom of the pool held a secret: a magical short bow +1, which the party agreed to give to Killoriel as a well-deserved upgrade.  End session with the party taking a short breather in the giant snake's former lair.
+
+      </p>
+
+      <h3>Session 16:</h3>
+      <p>
+        The party were surprised to discover that two of their previous companions, Niolas (human F1) and Hogan (dwarf F2) had been out adventuring on their own and were captured and enslaved by the very same orc party from the previous session, and were two of the redeemed slaves! Niolas and Hogan joined the party, and everyone got some well-needed rest.<br />
+        <b>DAYS 28 THROUGH 30</b><br />
+        The party traveled (now afoot leading their remaining mounts) west-northwest along the Suss Road without incident, totaling approximately 60 miles.<br />
+        <b>DAY 31</b><br />
+        The Suss Road began to gradually turn to the southwest, into the Suss Forest itself. The party made the decision to continue off the road into scrubland to the northwest, staying within sight of the coast of the Woolly Bay itself.<br />
+        <b>DAY 32</b><br />
+        The party encountered a lone fire beetle which was dispatched with ease by several ranged weapons. Niolas harvested its fireglands, which will continue to glow as candlelight through day 35 but are currently stored in an opaque sack.<br />
+        <b>DAY 33</b><br />
+        The party continued northwest through the coastal scrubland without incident.<br />
+        <b>DAY 34</b><br />
+        Before dawn, while Bronan was on watch, a band of 12 goblins came upon the party. Glordir awoke immediately, and he and Bronan began to defend against the horde. During the second round, an elf appeared and joined the fray. The remainder of the party joined at the beginning of the fourth round, when most of the goblins were burned to a crisp by Clem's
+        <i>burning hands</i> spell.<br />
+        After the fight, the elf introduced himself as Killoriel (elf F1) and explained that he had been stalking the goblins for some time and attacked when he saw them attack an unwitting party of adventurers. Killoriel joined the party, end session.
+      </p>
+
+      <h3>Session 15:</h3>
+      <p>
+        <b>END BASIC, BEGIN AD&amp;D</b><br />
+        The party made its way out of Cave G and back to the Keep safely, where several new members joined.<br />
+        <b>DAY 25</b><br />
+        Durin (dwarf F3), Gabbai (human C2), Clem (human M3), Father Tuck (human C1), and faithful friend Bronan (P3) set forth from the Keep in a northeasterly direction toward the Suss Road, along
+        with new companions Linus Padfoot (halfling T1), Glordir Woodkin (human R1), Groot (half-elf D1), Kaien (Mk1), and Gorgrim (half-orc F1). The goal was to reach the Free City of Greyhawk by
+        taking the Suss Road north along the Wild Coast, then following the Selintan to Greyhawk itself.<br />
+        After a few hours, the mounted party encountered several gnolls in the hills. The party gained surprise advantage, but the zealous Gorgrim became the unlucky target of one of the gnolls and
+        was killed with one hit when a parley attempt failed. The remainder of the gnolls were dispatched with, and the clerics buried poor Gorgrim at the spot where he died. The party camped nearby
+        for the night.<br />
+        <b>DAY 26</b><br />
+        The day and night passed without incident as the party continued through the foothills of the Drachensgrab Mountains toward the north coast.<br />
+        <b>DAY 27</b><br />
+        While passing in the valley between two hills, the party encountered a small animal of no description which was immediately pounced upon by a hungry maned lion from a nearby hill. Linus spotted the lion, and Groot carefully approached while casting <i>speak with animals</i> to assure the lion that the party meant him no harm and wished only to continue onward. The lion withdrew (with his kill), and the party reached the Suss Road, nearby which they pitched camp behind a berm.<br />
+        Not long thereafter, Glordir spotted an oncoming party of armed orcs with two mean-looking wolves on leads, escorting four shackled slaves! Durin and Bronan ascended the berm, and Durin called out in orcish, indicating a wish to buy the slaves. After a tense encounter where Bronan was nearly slain or taken hostage, the slaves were ransomed for the price of 65gp and two horses, and the orcish party reluctantly moved on.<br />
+        End session, the freed slaves have been brought into the party's camp, and the campfire has been re-kindled.
+      </p>
+
+      <h3>Session 14:</h3>
+      <p>
+        For once, the luck of the dice was with the party, showing no random encounters on the way back to the Keep, despite a slow pace due to the tied-up bandit prisoners. The prisoners were delivered into the hands of the Captain of the Guard and the party rested up<br />
+        <b>DAY 25</b><br />
+        The Captain of the Watch asked the party to escort several watchmen to the designated outpost site<br />
+        Niolas, Hogan, Marius, Drugmir, Durin, Clem, and Bronan set out with the watchmen; no random encounters, so the watchmen stopped off and started building the outpost while the party continued to the Caves of Chaos<br />
+        The party decided to tackle Cave G at the far end of the valley, which was full of cracked bones and rotting corpses<br />
+        It wasn't long before the party discovered that this was the lair of a vicious owlbear, which immediately ripped Marius limb from limb before a pack of seven giant rats joined the fight from behind, closing the party in a narrow cavern with seemingly no escape!<br />
+        A somewhat useful sleep spell from Clem took out three of the rats, and a poisoned wheel of cheese thrown as bait took out two more, while the owlbear was slowly whittled down<br />
+        One last room in Cave G held a pool with three gray oozes, and Hogan shot one with his crossbow several times until it collapsed into sludge, while the other two slid slowly into the water<br />
+        End session, party remains in the room with the pool and the remaining two(?) gray oozes...
+      </p>
+
+      <h3>Session 13:</h3>
+      <p>
+        Back at the Keep, the party brought their broken friend Bronan immediately to the chapel for emergency healing by the Curate and his acolytes. In a last-ditch effort to secure divine help for Bronan, Clem even emptied his pockets into the donation box.<br />
+        The party decided to rest and recuperate for a few days, advancing to...<br />
+        <b>DAY 24</b><br />
+        Marius, Drugmir, Father Tuck, Gabbai, Niolas, Hogan, Durin, Clem, and Bronan met the Captain of the Watch in the Keep's tavern, upset that he found himself unable to protect law and order on the wilderness road<br />
+        The party suggested the establishment of a watch outpost on the road, halfway between the Keep and the Caves of Chaos<br />
+        The Captain agreed, but such a feat could not be accomplished while the Keep faced the constant threat of raiders and bandits gathering in the woods to the south<br />
+        The party therefore headed south into the woods and came across a large clearing with a dozen evil men waiting for nightfall to raid the Keep and steal all of the horses stabled there! They dispatched the raiders, killing their captain and capturing their lieutenant and four spearmen to be dealt with by the authorities at the Keep<br />
+      </p>
+
+      <h3>Session 12:</h3>
+      <p>
+        <b>DAY 21</b><br />
+        Marius, Drugmir, Durin, Gabbai, Niolas, and Hogan, all having healed up from previous attempts to fight the forces of Chaos, set forth upon their trusty mounts with their friend Bronan and new acquaintances, Lareth the Priest and his two silent acolytes, on the east road toward the Caves of Chaos<br />
+        Unfortunately, the dice were not in their favor, and before the halfway point the party had encountered no fewer than three random encounters!<br />
+        First was several giant oil beetles crossing the road, which were dispatched with ease<br />
+        Second was a returning party of battered veteran adventurers, who gave some advice about one of the higher-up caves; it was mazelike and there were inexplicable sounds in the cave, seeming to come from all directions<br />
+        Third, the party encountered a pair of hungry mountain lions which put up a very strong fight<br />
+        Niolas used a flask of oil and torch to set one lion aflame, but the other savagely mauled Bronan before both ran off<br />
+        The party asked their friend Lareth to cast cure light wounds on their injured friend, and Lareth realized he was caught, for he was in fact an Evil High Priest all along, and had instead prepared CAUSE light wounds! When he cast his spell, drawing negative energy and releasing it into his "patient", Bronan fell to the ground and writhed in agony while Lareth and his acolytes attacked the party<br />
+        The acolytes were vanquished quickly, but Lareth's magical plate mail and magical shield proved difficult challenges for the party, who were quickly losing resources<br />
+        During the fight, Lareth referred to someone he evidently serves, whom he calls "The Dark Lady"<br />
+        Another burning flask of oil thrown at Lareth by Niolas was easily batted away, and as fate would have it, it fell directly onto poor Bronan, who now was at death's door and still on fire! Niolas quickly kicked dirt over him and smothered the flames with his own cloak<br />
+        As the fire all around licked at the Evil High Priest's armor, he withdrew a scroll and read from it; before the final word of the spell, he announced to the party, "You haven't seen the last of me!" At the spell's climax, a loud bang was heard and a large cloud of smoke filled the area - when the smoke cleared, Lareth was gone!<br />
+        End session, the party has returned to the Keep in much worse shape than previously thought<br />
+        Gabbai advanced to level 2, and Durin advanced to level 3<br />
+      </p>
+
+      <h3>Session 11:</h3>
+      <p>
+        <b>DAY 20</b><br />
+        Marius, Drugmir, Durin, Clem, and Robert met the jovial priest, Lareth, who collected his two silent acolytes and joined the party (with Bronan, as usual) in their pursuit of the Chaotic forces in the Caves of Chaos<br />
+        Upon going to the chapel in the Keep to receive a blessing from the Curate, Durin privately learned that the Curate doesn't trust Lareth<br />
+        The party were plagued by random encounters on the road, however - a gray ooze which nearly killed Marius, as well as several ghouls that used their paralyzing touch to kill Robert and nearly destroy the entire party until Lareth's acolytes were able to take care of them<br />
+        The party decided to return to the Keep as they were in no condition to fight just at the moment, and then encountered a robber fly and ANOTHER gray ooze, which were both quickly skipped past<br />
+        End session, party has returned to the Keep, broken and bruised
+      </p>
+
+      <h3>Session 10:</h3>
+      <p>
+        We retcon to fast-forward to...<br />
+        <b>DAY 19</b><br />
+        ...where Grol, Durin, a newly resurrected Clem, and Robert (T) approach the Caves of Chaos<br />
+        Party explores cave E, a one-room cave with an ogre<br />
+        After dealing many heavy blows to the ogre (including Clem's attempt at distraction, though the ogre was unfazed), it retreated deeper into the cave<br />
+        Party attempted to smoke him out, but he disappeared through a secret revolving wall into the goblin caves where he sounded the alarm<br />
+        The party looted the ogre's treasure, discovering several magical items and a lot of currency, though it was quickly determined that some of it was counterfeit<br />
+        Party discovered that goblins are very squishy indeed, and the ogre surrendered and agreed to join the party as a mercenary fighter for the price of 20 gold pieces, paid out of his own stash of counterfeit coins<br />
+        Party leaves the caves to fight another day, and on the way back to the keep encountered a stagecoach of nobles heading north along the road (flying the banner of the large town of Elredd), who were willing to trade a halfling-sized suit of leather armor +1 for 325 gp<br />
+        After this transaction and the stagecoach left northward, the party discovered the dagger wound covered in dried blood on the suit of armor's back (dun dun DUNNNNN)<br />
+        End session, party approaches the Keep
+      </p>
+
+      <h3>Session 9:</h3>
+      <p>
+        Grol had escorted the remaining kobolds out of the cave and presumably made it back to the Keep safely, while Hogan joined the party, having ridden up to the Caves of Chaos alone<br />
+        Exploring the rest of the kobold cave, the party discovered three kobold guards making a last stand who were promptly dealt with<br />
+        In the chieftain's chamber, the harem ran away when presented with the chieftain's severed head, and the party looted the remainder of the cave<br />
+        <b>DAY 7</b><br />
+        After an uneventful trip back to the Keep to drop off loot and heal some minor wounds, the party started back to the Keep<br />
+        Party encountered some robber flies but rode past them after one bit Elmer, Durin's mule<br />
+        Party also encountered another adventuring party returning from the Caves, who presented them with true information about the multiple orc clans and the fact that the higher elevation the entrance to the cave, the more dangerous the cave probably is<br />
+        End session, party intends to start exploring cave D
+      </p>
+
+      <h3>Session 8:</h3>
+      <p>
+        <b>DAY 6</b><br />
+        Durin (D2), Grol (C2), Gabbai (C1), and Marius (T3) left the Keep with Bronan on an expedition to the Caves of Chaos<br />
+        After an encounter on the road with a gnoll, costing the party the life of one of the horses, they arrived at the kobold cave<br />
+        Encountered 13 giant rats left from the last adventure in this cave - burned five to death, and the remaining 8 attacked at the mouth of the cave<br />
+        Two giant rats were killed, including the leader, and the rest scattered out into the valley<br />
+        The noise attracted the attention of most of the kobolds in the common area, who approached curiously<br />
+        A peace offering with the kobold chieftain failed, and a battle ensued where the kobold chieftain and several of the kobold clan were killed<br />
+        The remaining kobolds in the common area begged to be let go, which the party allowed<br />
+        End session, party is resting 1 turn in the kobold common area<br />
+      </p>
+
+      <h3>Session 7:</h3>
+      <p>
+        <b>DAY 5</b><br />
+        Durin and Clem went adventuring with two new adventurers, Sylp of Vesve Forest (E) and Tyr Anvilborn (D)<br />
+        Party ventured north to the location of the treasure on the map, which was guarded by the Mad Hermit and his mountain lion Kitty<br />
+        Clem and Tyr were killed, and during the fight Garret Slinko (T) snuck up on the party and joined to try and defeat the Hermit<br />
+        Treasure was recovered, including the Hermit's own hidden cache of coins and items<br />
+        Clem's body was taken back to the Keep for resurrection
+      </p>
+
+      <h3>Session 6:</h3>
+      <p>
+        <b>DAY 4</b><br />
+        Castellan's nephew Marius (T) joined the party<br />
+        Party returned to the lizardfolk mound and killed the remaining adults underground, while leaving the young<br />
+        Meku-Bal and Niolas died during this fight, Niolas is carried back to the Keep for resurrection<br />
+        Took the lizardfolk eggs to potentially sell, discovered cache of loot under the nest and three humans who had been kidnapped to be eaten<br />
+        Clem (MU), Grol (C), and Hogan (D) joined the party<br />
+        Encountered a party of bandits on the way out of the marsh<br />
+        Durin tricked the bandit captain into drinking poison, and the rest of the bandits ran off leaving a very large pile of stolen treasure behind, including a treasure map<br />
+        Clem, Hogan, Durin, and Grol leveled up to 2, and Marius leveled up to 3
+      </p>
+
+      <h3>Session 5:</h3>
+      <p>
+        <b>DAY 3</b><br />
+        Castellan informed party of a lizardfolk threat in the marshes to the southeast and asked them to help<br />
+        Party moved into the marsh, found the lizardfolk mound, cleared the six males outside<br />
+        Drugmir died during this fight, so Bronan carried his corpse<br />
+        Encountered four fire beetles on the way out of the marsh, but the beetles ran away<br />
+        Drugmir has been resurrected, needs 2 weeks of recuperation before he can adventure again
+      </p>
+
+      <h3>Session 4:</h3>
+      <p>
+        Party fought kobolds in the forest, brought back evidence of cultist activity to the Great Keep<br />
+        Learned that the cultists worship Iuz, destroyed their unholy symbols in the blacksmith's forge<br />
+        Awarded access to the inner bailey, received message from the Castellan that he wanted to speak with them ASAP about the cultists
+      </p>
+
+      <h3>Session 3:</h3>
+      <p>
+        <b>DAY 1</b><br />
+        Durin joined another party, restarting at the Great Keep<br />
+        THE NEW PARTY: Durin (D), Niolas (D), Drugmir (D), Meku-Bal (M), Gabbai (C)<br />
+        Hired a man-at-arms, Bronan (F3)<br />
+        <b>DAY 2</b><br />
+        New party ventured out into the forest (northeast) and ran across some cultists<br />
+        Killed 2 cultists, 3 fled, party collected cult evidence
+      </p>
+
+      <h3>Session 2:</h3>
+      <p>
+        Party moved further in, Durin (D) took one step and immediately fell in the pit. Killed kobolds at 1.<br />
+        Tried to go for the giant rats at 2, killed 5, but 13 are left including the leader<br />
+        Everyone died except Durin.
+      </p>
+
+      <h3>Session 1:</h3>
+      <p>
+        Character creation, party started just outside Cave A<br />
+        Killed two kobolds at cave entrance, the rest ran off<br />
+        Party moved to just inside the cave
+      </p>
+
+      <div class="display-5">Characters from the B/X campaign:</div>
+
+      <table id="basic-characters" class="table table-sm">
+        <thead>
+          <tr>
+            <th>Basic Character</th>
+            <th>Class</th>
+            <th>Player</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody class="table-group-divider">
+          <tr>
+            <td>Durin</td>
+            <td>Dwarf</td>
+            <td>Yossi</td>
+            <td>Alive</td>
+          </tr>
+          <tr>
+            <td>Avram</td>
+            <td>Cleric</td>
+            <td>Baruch</td>
+            <td>Dead as of session 2</td>
+          </tr>
+          <tr>
+            <td>Sir Dolton</td>
+            <td>Fighter</td>
+            <td>Alon</td>
+            <td>Dead as of session 2</td>
+          </tr>
+          <tr>
+            <td>Niolas</td>
+            <td>Dwarf</td>
+            <td>Alon</td>
+            <td>Resurrected on day 4 - Alive</td>
+          </tr>
+          <tr>
+            <td>Drugmir</td>
+            <td>Dwarf</td>
+            <td>Eric</td>
+            <td>Resurrected on day 3 - Alive</td>
+          </tr>
+          <tr>
+            <td>Meku-Bal</td>
+            <td>Magic-user</td>
+            <td>Baruch</td>
+            <td>Dead as of day 4</td>
+          </tr>
+          <tr>
+            <td>Gabbai</td>
+            <td>Cleric</td>
+            <td>Nat</td>
+            <td>Alive</td>
+          </tr>
+          <tr>
+            <td>Marius</td>
+            <td>Thief</td>
+            <td>Eric</td>
+            <td>Dead as of day 25</td>
+          </tr>
+          <tr>
+            <td>Clem</td>
+            <td>Magic-user</td>
+            <td>Baruch</td>
+            <td>Resurrected on day 5 - Alive</td>
+          </tr>
+          <tr>
+            <td>Grol</td>
+            <td>Cleric</td>
+            <td>Noah</td>
+            <td>Alive</td>
+          </tr>
+          <tr>
+            <td>Hogan</td>
+            <td>Dwarf</td>
+            <td>Alon</td>
+            <td>Alive</td>
+          </tr>
+          <tr>
+            <td>Sylp of Vesve Forest</td>
+            <td>Elf</td>
+            <td>Na'amah</td>
+            <td>Alive</td>
+          </tr>
+          <tr>
+            <td>Tyr Anvilborn</td>
+            <td>Thief</td>
+            <td>Velvel</td>
+            <td>Dead as of day 5</td>
+          </tr>
+          <tr>
+            <td>Garret Slinko</td>
+            <td>Thief</td>
+            <td>Velvel</td>
+            <td>Alive</td>
+          </tr>
+          <tr>
+            <td>Robert</td>
+            <td>Thief</td>
+            <td>Mendy</td>
+            <td>Resurrected on day 20</td>
+          </tr>
+          <tr>
+            <td>Father Tuck</td>
+            <td>Cleric</td>
+            <td>Mendy</td>
+            <td>Alive</td>
+          </tr>
+          <tr>
+            <td>Bronan</td>
+            <td>Fighter</td>
+            <td>NPC</td>
+            <td>Alive</td>
+          </tr>
+          <tr>
+            <td>Lareth</td>
+            <td>Cleric</td>
+            <td>NPC</td>
+            <td>Alive and on the run</td>
+          </tr>
+          <tr>
+            <td>Lareth's two acolytes</td>
+            <td>Cleric</td>
+            <td>NPCs</td>
+            <td>Dead</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+  </body>
+</html>
